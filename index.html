@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 101</title>
+    <link rel="stylesheet" href="style.css" class="css">
+</head>
+<style>
+
+body {
+    background-color: black;
+}
+.loader{
+    width: 150px;
+    height: 150px;
+    border-left: 5px solid #38ff8e;
+    border-radius: 50%;
+    animation: right5231 0.9s linear infinite;
+    animation-name: item;
+}
+
+@keyframes item {
+    0%, 100%{
+        transform: rotate(0deg);
+    } 
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.loader_1{
+    width: 100px;
+    height: 100px;
+    border-left: 5px solid red;
+    border-radius: 50%;
+    animation: slideToLeft 0.9s linear infinite;
+    animation-name: item_2;
+}
+
+@keyframes item_2{
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    75%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.loader_1{
+position: relative;
+right: 132px;
+}
+
+.loader_2{
+width: 75px;
+height: 75px;
+border-left: 5px solid white;
+border-radius: 50%;
+position: relative;
+right: 225px;
+animation: slideToLeft 0.9s linear infinite;
+animation-name: item_3;
+}
+
+@keyframes item_3{
+0%, 100%{
+    transform: rotate(0deg);
+}
+25%{
+    transform: rotate(90deg);
+}
+50%{
+    transform: rotate(180deg);
+}
+75%{
+    transform: rotate(270deg);
+}
+100%{
+    transform: rotate(360deg);
+}
+}
+.loader_4{
+width: 115px;
+height: 115px;
+border-left: 5px solid purple;
+border-radius: 50%;
+position: relative;
+right: 340px;
+animation: spin 0.9s linear infinite;
+animation-name: item_4;
+
+}
+@keyframes item_4{
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    75%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.loader_5{
+width: 115px;
+height: 115px;
+border-left: 5px solid purple;
+border-radius: 50%;
+position: relative;
+right: 422px;
+animation: spin 0.9s linear infinite;
+animation-name: item_4;
+
+}
+@keyframes item_5{
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    75%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}   
+.conatiner{
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+left: 204px;
+top: 150px;
+}
+
+
+
+</style>
+<body>
+
+<div class="conatiner">
+<div class="loader"></div>
+<div class="loader_1"></div>
+<div class="loader_2"></div>
+<div class="loader_4"></div>
+<div class="loader_5"></div>
+</div>
+</body>
+</html>
